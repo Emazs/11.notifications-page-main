@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+:root {
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --BlueLight: hsl(219, 85%, 90%);
+
+    --White: hsl(0, 0%, 100%);
+    --VeryLightGrayishBlue: hsl(210, 60%, 98%);
+    --LightGrayishBlue1: hsl(211, 68%, 94%);
+    --LightGrayishBlue2: hsl(205, 33%, 90%);
+    --GrayishBlue: hsl(219, 14%, 63%);
+    --DarkGrayishBlue: hsl(219, 12%, 42%);
+    --VeryDarkBlue: hsl(224, 21%, 14%);
+}
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--VeryLightGrayishBlue);
+    width: 100%;
+
+    Font-size: 16px;
+}
+
+.container{
+    background-color: var(--White);
+    width: 50%; /*70%*/
+    height: auto;
+    border-radius: 1em;
+    padding: 1rem 2rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+header section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+header .number{
+    color: white;
+    border: 1px solid none;
+    background-color: var(--Blue);
+    padding: 0.1em 0.5em;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.link{
+    border: none;
+    color: var(--DarkGrayishBlue);
+    text-decoration: none;
+}
+
+.link:hover{
+    color: var(--Blue);
+}
+
+/*main*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.persons{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    padding: 1em 1em;
+}
+
+.img{
+    width: 45px;
+}
+
+.grup1{
+    background-color: var(--VeryLightGrayishBlue);
+}
+
+.grup1 p{
+    margin: 5px 0;
+}
+
+.persons .name a{
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.persons .name a:hover, .persons .first a:hover{
+    color: var(--Blue);
+}
+
+.persons p{
+    color: var(--DarkGrayishBlue);
+}
+
+.persons .first a{
+    text-decoration: none;
+    color: var(--DarkGrayishBlue);
+    font-weight: 600;
+}
+
+.circle{
+    margin-left: 3px;
+    background-color: var(--Red);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.name-circle{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.chess a{
+    text-decoration: none;
+    color: var(--Blue);
+    font-weight: 600;
+}
+
+
+.persons p{
+    margin: 5px 0;
+}
+
+.message{
+    display: flex;
+    justify-content: end;
+    margin-right: 1em;
+}
+
+.borde:hover{
+    cursor: pointer;
+    background-color: var(--VeryLightGrayishBlue);
+}
+
+.borde{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--LightGrayishBlue2);
+    border-radius: 5px;
+    width: 83%;
+    padding: 15px;
+}
+
+.borde p{
+    margin: 0;
+    color: var(--DarkGrayishBlue);
+}
+
+.com-picture{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*768*/
+@media only screen and (max-width: 990px){
+
+    body{   
+        padding: 0;
+        height: auto;
+        
+    }
+
+    .container{
+        width: 90%; /*70*/
+        border-radius: none;
+    }
+}
